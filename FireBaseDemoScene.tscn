@@ -1,0 +1,74 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://FirebaseControlNode.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UserName" type="RichTextLabel" parent="."]
+anchor_right = 0.039
+anchor_bottom = 0.067
+margin_left = 88.4444
+margin_top = 158.087
+margin_right = 444.508
+margin_bottom = 290.887
+text = "Username"
+
+[node name="Email" type="RichTextLabel" parent="."]
+margin_left = 84.0238
+margin_top = 187.016
+margin_right = 177.024
+margin_bottom = 227.016
+text = "Email"
+
+[node name="ProfilePhoto" type="TextureRect" parent="."]
+margin_left = 196.167
+margin_top = 131.841
+margin_right = 370.167
+margin_bottom = 264.841
+
+[node name="Get User info" type="Button" parent="."]
+margin_left = 82.6508
+margin_top = 72.5715
+margin_right = 271.651
+margin_bottom = 92.5715
+text = "Get user info"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Show Banner Ad" type="Button" parent="."]
+margin_left = 89.7064
+margin_top = 269.119
+margin_right = 278.706
+margin_bottom = 289.119
+text = "Show Banner Ad"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Show Reward Ad" type="Button" parent="."]
+margin_left = 89.7064
+margin_top = 318.508
+margin_right = 278.706
+margin_bottom = 338.508
+text = "Show Reward Ad"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Show Interstitial Ad" type="Button" parent="."]
+margin_left = 87.6905
+margin_top = 358.826
+margin_right = 276.691
+margin_bottom = 378.826
+text = "Show Interstitial Ad"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="button_up" from="Get User info" to="." method="_on_Get_User_info_button_up"]
